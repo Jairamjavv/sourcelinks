@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <title>Python Outta Box - Part 1</title>
+
+    <style>
+        body {
+            background-color: #F0FFFF;
+        }
+
+        .hero-body {
+            background-color: #FF9933;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .body-content {
+            color: #000080;
+        }
+
+        a:hover {
+            color: orangered;
+            font-weight: bolder;
+        }
+
+        .footer {
+            background-color: #138808;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .fa-heart {
+            color: red;
+        }
+
+        .fa-peace {
+            color: white;
+        }
+
+        .fa-plus {
+            color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container title has-text-centered">
+                    <h2>Python Outta Box Series</h2>
+                    <br>
+                    <h4>Part 1</h4>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="container">
+        <div class="title">
+            Built-in functions.
+        </div>
+        <div class="body-content">
+            <p>There are lots of functions which python provides to operate on without importing any module. Many are
+                common which python developers use, here are some of the methods which you may know or not. I have
+                provided as much as examples I can.
+                <!-- But the thing here is that I haven’t provided the solution for the
+                code. I did it intentionally. I want the readers to open any online python compiler and try with the
+                codes, so that you can have the liberty to experiment with the code.  -->
+                All the below codes are tested and
+                works fine for python version 3.5.0+ versions.</p>
+            <hr>
+
+            <p>
+                <p style="text-decoration: underline;">abs(x)</p>
+            </p>
+            <p>It returns a non negative value irrespective of int or double. In mathematics the absolute value is
+                represented as ‘|x|’ . Whenever abs(x) is implemented then the compiler calls x.__abs__()</p>
+            <img src="images/post1/1.PNG" alt="image" width=70% height="600">
+            &nbsp;
+            <p>
+                <p style="text-decoration: underline;">all(iterable)</p>
+            </p>
+            <p>Returns a boolean True if all the elements in the iterable is true or empty iterable.</p>
+            <img src="images/post1/2.PNG" alt="image" width=70% height="600">
+            &nbsp;
+            <p>
+                <p style="text-decoration: underline;">any(iterable)</p>
+            </p>
+            <p>Similar to above but returns True even if one element is true inside the iterable.</p>
+            <img src="images/post1/3.PNG" alt="image" width=70% height="600">
+            &nbsp;
+            <p>
+                <p style="text-decoration: underline;">bin(x)</p>
+            </p>
+            <p>Returns the binary equivalent of the integer. ‘0b’ will be prefixed.</p>
+            <img src="images/post1/4.PNG" alt="image" width=70% height="600">
+            &nbsp;
+            <p>
+                <p style="text-decoration: underline;">ord(x) & chr(x)</p>
+            </p>
+            <p>Both are opposite to each other. ord(x) returns the ASCII unicode equivalent of ‘x’ and chr(x) returns
+                the string or number equivalent.</p>
+            <img src="images/post1/5.PNG" alt="image" width=70% height="600">
+            &nbsp;
+            <p>
+                <p style="text-decoration: underline;">dir([object]) </p>
+            </p>
+            <p>Returns a list of available valid attributes related to that object.</p>
+            <img src="images/post1/6.PNG" alt="image" width=70% height="600">
+            &nbsp;
+            <p>
+                <p style="text-decoration: underline;">divmod(x,y)</p>
+            </p>
+            <p>Expanded as (DivideMod). Returns an list in the format of [x//y, x%y]</p>
+            <img src="images/post1/7.PNG" alt="image" width=70% height="600">
+            &nbsp;
+            <p>
+                <p style="text-decoration: underline;">help([object/function])</p>
+            </p>
+            <p>Returns the details about the class object or module or function. The respective class object or module
+                or function should contain commented documentation.</p>
+            <img src="images/post1/8.PNG" alt="image" width=70% height="600">
+            &nbsp;
+            <p>
+                <p style="text-decoration: underline;">hex(x)</p>
+            </p>
+            <p>Converts an integer to lowercase hexadecimal String.</p>
+            <img src="images/post1/9.PNG" alt="image" width=70% height="600">
+            &nbsp;
+            <p>
+                <p style="text-decoration: underline;">issubclass(subclass, class)</p>
+            </p>
+            <p>You might have heard of isinstanceof() which returns whether the object is of the given class but have
+                you heard about issubclass(). It checks whether the given subclass is the subclass of the class
+                provided. </p>
+            <img src="images/post1/10.PNG" alt="image" width=70% height="600">
+            &nbsp;
+            <p>
+                <p style="text-decoration: underline;">oct(x)</p>
+            </p>
+            <p>Converts an integer number to an octal string. It is prefixed with “0o”.</p>
+            <img src="images/post1/11.PNG" alt="image" width=70% height="600">
+            &nbsp;
+            <p>
+                <p style="text-decoration: underline;">reversed(list/sequence)</p>
+            </p>
+            <p>Python has an inbuilt function that reverses the list or String sequence.</p>
+            <img src="images/post1/12.PNG" alt="image" width=70% height="600">
+            &nbsp;
+            <p>
+                <p style="text-decoration: underline;">round(x, n)</p>
+            </p>
+            <p>Rounds the number to ‘n’ places.</p>
+            <img src="images/post1/13.PNG" alt="image" width=70% height="600">
+            &nbsp;
+            <p>
+                <p style="text-decoration: underline;">sorted(list/sequence)</p>
+            </p>
+            <p>Well python provides a function to sort the given list or string sequence.</p>
+            <img src="images/post1/14.PNG" alt="image" width=70% height="600">
+            &nbsp;
+            <p>
+                <p style="text-decoration: underline;">sum(list)</p>
+            </p>
+            <p>You have heard the basically sum() would return a+b kind of operation but in python sum() can take a list
+                of integers as parameters and returns the cumulative sum.</p>
+            <img src="images/post1/15.PNG" alt="image" width=70% height="600">
+            &nbsp;
+        </div>
+    </div>
+
+    <section class="section">
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    <i class="fas fa-peace"></i>
+                    <i class="fas fa-plus"></i>
+                    <i class="fas fa-heart"></i>
+                </p>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>
